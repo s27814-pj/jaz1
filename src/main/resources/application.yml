@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: dawlit
+my:
+  custom:
+    property: Hello from application properties
