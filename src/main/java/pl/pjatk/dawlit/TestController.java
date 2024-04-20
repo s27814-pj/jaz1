@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.*;
 public class TestController {
 
 
+    @GetMapping("/exception")
+    public Boolean exception(){
+        throw new RuntimeException("stuff");
+    }
+
     @GetMapping("/hello")
     public ResponseEntity<String> helloParam(@RequestParam String reqParam){
         return ResponseEntity.ok(reqParam);
