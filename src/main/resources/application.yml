@@ -1,6 +1,11 @@
+custom:
+  login-url: test-login
+  credientals:
+    user: test-user
+    password: pass
+
 spring:
   application:
     name: dawlit
-my:
-  custom:
-    property: Hello from application properties
+  main:
+    banner-mode: 'off'

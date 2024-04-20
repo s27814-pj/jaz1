@@ -9,7 +9,10 @@ import java.util.List;
 public class ConfigClass {
 
     @Bean
-    public NewClass newClass(){
+    public NewClass newClass(CustomConfig customConfig){
+        System.out.println(customConfig.getLoginUrl());
+        System.out.println(customConfig.getCredientals().getUser());
+        System.out.println(customConfig.getCredientals().getPassword());
         return new NewClass();
     }
 

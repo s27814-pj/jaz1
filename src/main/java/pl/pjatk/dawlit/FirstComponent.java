@@ -9,12 +9,13 @@ import java.util.List;
 @Component
 public class FirstComponent {
     public FirstComponent(@Value("${my.custom.property:#{null}}") String property, SecondComponent secondComponent, List<String> list){
-        System.out.println("FirstComponent");
-        System.out.println(list);
-        System.out.println(property);
+        //System.out.println("FirstComponent");
+        //System.out.println(list);
+        //System.out.println(property);
     }
     public void printHello(){
-        System.out.println("printHello() FirstComponent");
+
+        //System.out.println("printHello() FirstComponent");
     }
 
 }

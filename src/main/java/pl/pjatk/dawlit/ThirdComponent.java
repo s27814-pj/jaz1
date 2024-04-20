@@ -14,8 +14,8 @@ public class ThirdComponent {
     public ThirdComponent(ApplicationContext applicationContext){
         FirstComponent ofFirst = applicationContext.getBean("firstComponent", FirstComponent.class);
         SecondComponent ofSecond = applicationContext.getBean("secondComponent", SecondComponent.class);
-        ofSecond.printHello();
-        ofFirst.printHello();
+        //ofSecond.printHello();
+        //ofFirst.printHello();
         applicationContext.getBean("firstComponent", FirstComponent.class).printHello();
         applicationContext.getBean("secondComponent", SecondComponent.class).printHello();
 
